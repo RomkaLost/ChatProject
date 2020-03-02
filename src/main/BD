@@ -1,0 +1,19 @@
+CREATE TABLE IF NOT EXISTS users(
+Id      serial      NOT NULL PRIMARY KEY,
+login text NOT NULL,
+password text NOT NULL,
+realname text NOT NULL,
+gender text NOT NULL);
+
+CREATE TABLE rooms
+(
+    Id serial NOT NULL PRIMARY KEY,
+    name text NOT NULL
+);
+
+CREATE TABLE users_rooms
+  (
+      roomId INTEGER NOT NULL,
+      userId INTEGER NOT NULL
+
+  );
